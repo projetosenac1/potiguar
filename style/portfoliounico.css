@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 50;
+}
+
+:root {
+    --branco-fundo: #fff;
+    --cinza-slides: #B8B8B8;
+    --azul-principal: #005594;
+    --azul-rodape: #004476;
+    --azul-titulo: #003b66;
+    --azul-fonte: #002139;
+    --laranja-principal: #F38143; 
+    --laranja-fraco: #F6BF86;
+    
+    --font-principal: "Josefin Sans", sans-serif;
+  }
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 72px;
+    margin-bottom: 40px;
+    height: 64px;
+    color: var(--branco-fundo);
+    font-size: 1.25rem;
+    background-color: var(--azul-principal);
+}
+
+.chef_nome {
+    border-left: 2px solid var(--laranja-principal); 
+    padding-top: 3px;
+    padding-left: 10px;
+    color: var(--azul-titulo);
+    height: auto;
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+
+.descricao {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 50px 50px 50px;
+    border-radius: 16px;
+    background-color: var(--azul-principal);
+    color: var(--branco-fundo);
+}
+
+.descricao_foto {
+    margin: 0px 20px;
+}
+
+.descricao_foto > img {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 20px;
+} 
+
+.descricao_informacoes h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.informacoes_individual {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.informacoes_individual > p {
+    font-size: 1.25rem;
+}
+
+.apresentacao {
+    color: var(--azul-fonte);
+    margin: 0px 30px 40px 30px;
+}
+
+.apresentacao h2 {
+    margin-bottom: 10px;
+    font-size: 1.375rem;
+}
+
+.apresentacao_introducao > p {
+    margin-bottom: 25px;
+}
+ 
+
+#prevButton, #nextButton{
+    color: var(--azul-principal);
+    font-size: 1.8rem;
+}
+
+.botoes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botoes_passar {
+    margin-bottom: 40px;
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    gap: 30px;
+}
+
+.passar_bolinhas {
+    margin-right: 48px;
+    width: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    margin: 0px 8px;
+    font-size: 8px;
+    background-color: var(--cinza-slides);
+    color: var(--cinza-slides);
+    border-radius: 50%;
+}
+
+.carousel .slide {
+    display: none;
+}
+
+.slide p {
+    text-align: center;
+    font-family: var(--font-principal);
+    color: var(--azul-fonte);
+    font-size: 1.25rem;
+}
+
+.carousel .active {
+    display: block;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .titulo {
+        margin-top: 80px;
+        font-size: 1.5rem;
+        padding: 15px 36px 15px 0px;
+    }
+
+    .cont {
+        display: flex;
+        align-items: center;
+        margin: 60px auto;
+        max-width: 1200px;
+    }
+
+    .chef_nome {
+        max-width: 1200px;
+        margin: 60px auto;
+        border-left: none;
+        padding: 0;
+    }
+
+    .chef_nome h2{
+        border-left: 2px solid var(--laranja-principal); 
+        padding-top: 10px;
+        padding-left: 20px;
+        font-size: 2.5rem;
+        margin-left: 60px;
+    }
+
+    .descricao_informacoes {
+        margin-bottom: 10px;
+    }
+    
+    .descricao_informacoes p {
+        font-size: 1.5rem;
+    }
+
+    .apresentacao {
+        width: 600px;
+    }
+
+    .carousel {
+        max-width: 600px;
+        margin: auto;
+    }
+}

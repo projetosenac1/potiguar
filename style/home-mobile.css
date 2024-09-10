@@ -1,0 +1,546 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+:root {
+  --branco-fundo: #fff;
+  --cinza-slides: #B8B8B8;
+  --azul-principal: #005594;
+  --azul-rodape: #004476; 
+  --azul-fonte: #002139;
+  --laranja-principal: #F38143; 
+  --laranja-fraco: #F6BF86;
+  
+  --font-principal: "Josefin Sans", sans-serif;
+}
+
+body {
+    font-family: var(--font-principal);
+    color: var(--azul-fonte);
+}
+
+.bannerhome {
+    margin-top: 72px;
+    height: 163px;
+    width: 100%;
+    background: url('../imgs/home-imgs/banner-home.png') no-repeat;
+    display: flex;
+    align-items: end;
+    color: var(--branco-fundo);
+    background-position: center center;
+}
+
+
+.bannerhome > div {
+    margin: 50px auto 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bannerhome > div > h1 {
+    margin-bottom: 5px;
+    font-size: 2.1rem;
+    line-height: 33px;
+}
+
+.gastronomia {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.gastronomia > h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+
+.gastronomia_foto {
+    width: 100%;
+    margin-bottom: 45px;
+}
+.gastronomia > hr {
+    width: 243px;
+    margin: auto;
+    margin-bottom: 40px;
+    border: 1px solid var(--laranja-principal);
+}
+
+.gastronomia p {
+    margin-bottom: 20px;
+}
+
+.escolhersenac {
+    background-color: var(--azul-principal);
+    color: var(--branco-fundo);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.escolhersenac h3 {
+    font-weight: 500;
+    font-size: 1.25em;
+    display: inline;
+}
+
+.escolhersenac_titulo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.escolhersenac_titulo > div {
+    padding-right: 2px;
+    height: 46px;
+    margin-right: 15px;
+    background-color: var(--laranja-principal);
+}
+
+.escolhersenac_foto {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.escolhersenac p {
+    padding-bottom: 20px;
+}
+
+.cursos {
+    padding: 30px;
+}
+
+.cursos_titulo {
+    border-left: 2px solid var(--laranja-principal); 
+    height: auto;
+    padding-top: 3px;
+    padding-left: 10px;
+    
+}
+
+.cursos h3 {
+    font-size: 1.25em;
+    display: inline;
+    
+}
+
+.slide h4 {
+    margin-top: 25px;
+    font-size: 1.25rem;
+    height: 50px;
+}
+
+.slide_definicao {
+    margin-top: 15px;
+    margin-bottom: 80px;
+    font-size: 1.125rem;  
+    height: 150px;
+}
+
+.slide_data {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#prevButton, #nextButton{
+    color: var(--azul-principal);
+    font-size: 1.8rem;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botoes_passar {
+    margin-bottom: 40px;
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    gap: 30px;
+}
+
+.passar_bolinhas {
+    margin-right: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    margin: 0px 8px;
+    font-size: 8px;
+    background-color: var(--cinza-slides);
+    color: var(--cinza-slides);
+    border-radius: 50%;
+}
+
+.carousel .slide {
+    display: none;
+}
+
+.carousel .active {
+    display: block;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+}
+
+.botoes_saiba {
+    background-color: var(--laranja-principal);
+    color: var(--branco-fundo);
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 5px;
+}
+
+.sobrenos > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 270px;
+    background: url('../imgs/home-imgs/sobre-nós-elemento.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: var(--branco-fundo);
+}
+
+.sobrenos p {
+    margin: 20px 12px 0px 50px ;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.sobrenos a {
+    background-color: var(--azul-principal);
+    color: var(--branco-fundo);
+    text-decoration: none;
+    padding: 10px 35px;
+    border-radius: 45px;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 426px)  {
+    .sobrenos p {
+        margin: 30px 25px 0px 75px ;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .sobrenos a {
+        margin-top: 30px;
+    }
+
+    .sobrenos h3 {
+        margin-top: 15px;
+    }
+
+    .sobrenos {
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (min-width: 387px)  {
+    .sobrenos p {
+        margin: 30px 25px 0px 75px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .sobrenos {
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    body {
+        line-height: 35px;
+    }
+
+    .bannerhome {
+        background: url('../imgs/home-imgs/home-maior/banner-home-maior.png') no-repeat;
+        height: 400px;
+        background-position: center center;
+    }
+
+    .bannerhome > div {
+        margin: 400px auto 60px auto;
+        width: 1200px;
+    }
+
+    .bannerhome > div > h1 {
+        font-size: 3.75rem;
+    }
+
+    .bannerhome > div > p {
+        font-size: 1.75rem;
+    }
+
+    .bannerhome > div > h1, .bannerhome > div > p {
+      margin: 0px 60px 20px 60px;
+      line-height: 40px;
+    }
+
+    .gastronomia {
+        padding-left: 60px;
+        padding-right: 60px;
+        max-width: 1200px;
+        margin: 80px auto;
+    }
+
+    .gastronomia h2 {
+        margin: 0px auto 40px auto;
+        font-size: 2rem;
+        width: 650px;
+        line-height: 40px;
+    }
+
+    .gastronomia_cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+
+    .gastronomia_cont > article {
+        width: 700px;
+        padding-top: 20px;
+        padding-left: 30px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .gastronomia_foto {
+        width: 550px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+    }
+
+    .escolhersenac {
+        padding: 60px;
+    }
+
+    .escolhersenac > div {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .escolhersenac_titulo > div {
+        display: none;
+    }
+
+    .escolhersenac_titulo {
+        font-size: 1.70rem;
+        padding-top: 0;
+    }
+
+    .escolhersenac_titulo h3 {
+        margin: auto;
+    }
+
+    .escolhersenac_cont {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .escolhersenac_cont > article {
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .escolhersenac_foto {
+        width: 500px;
+    }
+
+    .cursos {
+        margin: 60px;
+    }
+    
+    .cursos > div {
+        margin: auto;
+        max-width: 1200px;
+    }
+
+    .cursos_titulo {
+        font-size: 1.60rem;
+        padding: 10px 0px 10px 20px;
+        border-left: 3px solid var(--laranja-principal);
+        margin-bottom: 20px;
+    }
+
+    .slide > div {
+        display: flex;
+        align-items: end;
+        
+    }
+
+    .slide h4 {
+        height: 0;
+        font-size: 1.5rem;
+        margin-bottom: 70px;
+    }
+
+    }
+    .slide_cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 40px;
+    }
+
+    .slide img {
+        max-width: 500px;
+    }
+
+    .slide_definicao {
+        height: 170px;
+        font-size: 1.25rem;
+    }
+
+    .slide_data {
+        margin-bottom: 0px;
+    }
+
+    .botoes {
+        margin-top: 30px;
+    }
+
+    #prevButton, #nextButton {
+        font-size: 2.25rem;
+    }
+
+    .sobrenos {
+        background: url('');
+        margin: 40px 60px;
+        height: 500px;
+    }
+
+    .sobrenos > div {
+        background: url('../imgs/home-imgs/sobre-nos-1024.png') no-repeat;
+        max-width: 1200px;
+        margin: auto;
+        height: 500px;
+        background-size: 100%;
+    }
+
+    .sobrenos h3 {
+        padding-top: 15px;
+        padding-left: 214px;
+        font-size: 2rem;
+    }
+
+    .sobrenos p {
+        width: 500px;
+        padding-left: 260px;
+        font-size: 1.5rem;
+        line-height: 38px;
+    }
+
+    .sobrenos a {
+        margin-left: 216px;
+    }
+
+
+@media screen and (min-width: 1100px){
+    .sobrenos h3 {
+        padding-top: 33px;
+    }
+}
+
+@media screen and (min-width: 1160px) {
+    .sobrenos h3 {
+        padding-top: 50px;
+    }
+
+    .slide_definicao {
+        height: 130px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .gastronomia_cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    
+    .gastronomia_cont > article {
+        width: 550px;
+        margin-right: 60px;
+        border-left: 3px solid var(--laranja-principal);
+        padding-top: 20px;
+        padding-left: 30px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .escolhersenac_titulo {
+        margin-bottom: 60px;
+        padding: 12px 20px;
+        border-left: 3px solid var(--laranja-principal);
+        font-size: 1.60rem;
+    }
+
+    .escolhersenac_cont {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .escolhersenac_titulo h3 {
+        margin: 0;
+    }
+
+    .escolhersenac_cont > article {
+        max-width: 600px;
+        text-align: right;
+        padding-right: 30px;
+        border-right: 3px solid var(--laranja-principal);
+    }
+
+    .sobrenos {
+        background: url('');
+        margin: 40px 60px;
+
+    }
+
+    .sobrenos > div {
+        background: url('../imgs/home-imgs/sobre-nos-1200.png') no-repeat;
+        max-width: 1200px;
+        background-size: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1300px){
+    .sobrenos h3 {
+        padding-top: 73px;
+    }
+
+}

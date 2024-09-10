@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --branco-fundo: #fff;
+    --cinza-slides: #B8B8B8;
+    --azul-principal: #005594;
+    --azul-rodape: #004476;
+    --azul-titulo: #003b66;
+    --azul-fonte: #002139;
+    --laranja-principal: #F38143; 
+    --laranja-fraco: #F6BF86;
+    
+    --font-principal: "Josefin Sans", sans-serif;
+  }
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 72px;
+    margin-bottom: 30px;
+    height: 60px;
+    color: var(--branco-fundo);
+    font-size: 1.25rem;
+    background-color: var(--azul-principal);
+}
+
+.techinside {
+    margin: 0px 30px;
+}
+
+.subtitulo {
+    display: flex;
+    border-left: 2px solid var(--laranja-principal); 
+    color: var(--azul-titulo);
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+.fototech {
+    width: 230px;
+}
+
+.techinside_introducao > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0px 70px 0px;
+}
+
+.techinside_introducao p {
+    margin-bottom: 30px;
+}
+
+.techinside_mvv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.mvv_colet {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.equipe {
+    background-color: var(--azul-principal);
+    color: var(--branco-fundo);
+    padding: 30px;
+}
+
+.equipe_descricao > h2 {
+    display: flex;
+    border-left: 2px solid var(--laranja-principal); 
+    padding-top: 3px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.equipe_descricao > div > p {
+    margin-bottom: 30px;
+}
+
+.equipe_foto {
+    width: 100%;
+    margin: 40px 0px;
+}
+
+.equipe_foto2 {
+    width: 100%;
+    margin: 40px 0px;
+}
+
+.funcoes_membros {
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membros_devs {
+    height: 60px;
+    width: 326px;
+    background: url('../imgs/sobre-imgs/devs-front-end.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+.membros_webd {
+    width: 212px;
+    height: 60px;
+    background: url('../imgs/sobre-imgs/web-des.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+.membros_redatores {
+    width: 262px;
+    height: 59px;
+    background: url('../imgs/sobre-imgs/redatores.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+.parceria {
+    margin: 30px;
+}
+
+.parceria_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.cont_logo {
+    width: 230px;
+    margin: 40px 0px;
+}
+
+.parceria_cont > div > p {
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px){
+    .titulo {
+        margin-top: 80px;
+        font-size: 1.5rem;
+        padding: 15px 36px 15px 0px;
+    }
+
+    .techinside {
+        margin: 0px 60px;
+    }
+    
+    .techinside_introducao {
+        margin: auto;
+        max-width: 1200px;
+    }
+
+    .fototech {
+        width: 389px;
+        margin-left: 40px;
+    }
+    
+    .techinside_introducao > div {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 30px;
+        margin: 40px 0px 70px 0px;
+    }   
+
+    .techinside_mvv {
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        margin: 0px 60px 70px 60px;
+        gap: 140px;
+    } 
+
+    .mvv_colet {
+        max-width: 300px;
+    }
+
+    .equipe {
+        padding: 60px;
+    }
+    
+    .equipe_descricao {
+        max-width: 1200px;
+        margin: auto;
+        padding-bottom: 60px;
+    }
+
+    .equipe_descricao > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    .equipe_descricao > div > div  {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 700px;
+    }
+
+    .equipe_foto {
+        margin: 0;
+        width: 470px;
+    }
+
+    .equipe_foto2 {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .equipe_funcoes {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .parceria {
+        max-width: 1200px;
+        margin: 60px auto;
+        padding: 0px 60px;
+    } 
+    
+}
